@@ -20,6 +20,6 @@ def go():
         time.sleep(1)
 
 
-threading.Thread(target=go)
-t.daemon = True
-t.start()
+thread = threading.Thread(target=go)
+thread.daemon = True
+thread.start()
