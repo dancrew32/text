@@ -2,4 +2,4 @@ run:
 	python app.py
 
 timezone:
-	heroku config:add TZ="America/Los_Angeles"
+	heroku config:add TZ="America/Los_Angeles" --app danmasq-text
