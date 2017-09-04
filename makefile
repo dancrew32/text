@@ -6,3 +6,6 @@ timezone:
 
 logs:
 	heroku logs -n 500 -a danmasq-text --tail
+
+deploy:
+	git add -A && git commit && git push origin master
