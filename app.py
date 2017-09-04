@@ -15,7 +15,14 @@ def index():
 
 def go():
     schedule.every().day.at('8:00').do(wake.wake)
-    schedule.every().day.at('12:00').do(lunch.lunch)
+
+    schedule.every().monday.at('12:00').do(lunch.work)
+    schedule.every().tuesday.at('12:00').do(lunch.work)
+    schedule.every().wednesday.at('12:00').do(lunch.work)
+    schedule.every().thursday.at('12:00').do(lunch.work)
+    schedule.every().friday.at('12:00').do(lunch.work)
+    schedule.every().saturday.at('12:00').do(lunch.home)
+    schedule.every().sunday.at('12:00').do(lunch.home)
 
     while True:
         schedule.run_pending()
