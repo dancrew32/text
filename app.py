@@ -3,7 +3,7 @@ import time
 import wake
 
 
-schedule.every().day.at('11:10 PDT').do(wake.wake)
+schedule.every().day.at('11:14').do(wake.wake)
 
 while True:
     schedule.run_pending()
