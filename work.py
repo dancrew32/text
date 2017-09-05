@@ -5,9 +5,9 @@ messages = (
     'Go home.',
     'Work is over. Go home.',
     'Stop working. Go home.',
-    'git commit -am "finish that shit tomorrow, going home now"',
+    'git commit -am "todo, going home"',
 )
 
 def go_home():
     message = random.choice(messages)
-    text.text(message % biz)
+    text.text(message)
