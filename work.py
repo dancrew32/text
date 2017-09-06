@@ -10,4 +10,5 @@ messages = (
 
 def go_home():
     message = random.choice(messages)
-    text.text(message)
+    text.me(message)
+    print(message)

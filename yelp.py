@@ -50,7 +50,7 @@ def request(host, path, bearer_token, url_params=None):
     return response.json()
 
 
-def search(bearer_token, term, location):
+def _search(bearer_token, term, location):
     url_params = {
         'term': term.replace(' ', '+'),
         'location': location.replace(' ', '+'),
@@ -64,7 +64,7 @@ def search(bearer_token, term, location):
 
 def search(term, location):
     bearer_token = obtain_bearer_token(API_HOST, TOKEN_PATH)
-    response = search(bearer_token, term, location)
+    response = _search(bearer_token, term, location)
     businesses = response.get('businesses')
 
     out = []
