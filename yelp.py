@@ -55,7 +55,7 @@ def _search(bearer_token, term, location):
         'term': term.replace(' ', '+'),
         'location': location.replace(' ', '+'),
         'open_now': True,
-        'price': '1,2',
+        'price': '1,2,3',
         'limit': 50,
         'radius': 200
     }

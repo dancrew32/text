@@ -10,6 +10,7 @@ messages = (
     '%s\nHave the best day!',
     '%s\nSee ya later, alligator!',
     '%s\nLove you to bits!',
+    '%s\nYou are the best!',
 )
 
 
@@ -35,4 +36,3 @@ def bub_am():
     times = bub_am_times()
     out = message % times
     text.bub(out)
-    print(out)

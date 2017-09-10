@@ -10,4 +10,3 @@ messages = (
 def wake():
     message = random.choice(messages)
     text.me(message)
-    print(message)

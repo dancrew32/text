@@ -15,7 +15,14 @@ def work():
     biz = 'Try %s' % random.choice(searches)
     out = message % biz
     text.me(out)
-    print(out)
+
+
+def bub():
+    message = random.choice(messages)
+    searches = yelp.search('lunch', os.environ['BUB_WORK_ADDRESS'])
+    biz = 'Try %s' % random.choice(searches)
+    out = message % biz
+    text.bub(out)
 
 
 def home():
@@ -24,4 +31,3 @@ def home():
     biz = 'Try %s' % random.choice(searches)
     out = message % biz
     text.me(out)
-    print(out)

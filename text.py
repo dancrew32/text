@@ -1,4 +1,5 @@
 import boto3
+import log
 import random
 import os
 
@@ -10,7 +11,10 @@ sns = boto3.client('sns', region_name=region)
 
 def me(message):
     sns.publish(PhoneNumber=my_phone, Message=message)
+    log.log(message)
 
 
 def bub(message):
     sns.publish(PhoneNumber=bub_phone, Message=message)
+    log.log(message)
+
