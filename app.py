@@ -61,4 +61,3 @@ def go():
 thread = threading.Thread(target=go)
 thread.daemon = True
 thread.start()
-text.me('Running!')
